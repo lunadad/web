@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #34495e;
-    --accent-color: #3498db;
-    --text-color: #2c3e50;
-    --background-color: #f9f9f9;
+    --primary-color: #333333;
+    --secondary-color: #555555;
+    --accent-color: #ff6f61;
+    --text-color: #333333;
+    --background-color: #f4f4f4;
     --font-family: 'Roboto', sans-serif;
 }
 
@@ -20,11 +20,37 @@ body {
     background-color: var(--background-color);
 }
 
+nav {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--accent-color);
+}
+
 .hero-image {
-    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&fit=max');
+    background-image: url('img/tiffany.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +104,7 @@ h1 {
 }
 
 .subscribe-btn:hover {
-    background-color: #2980b9;
+    background-color: #e65c50;
     transform: translateY(-3px);
 }
 
